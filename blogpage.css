@@ -1,0 +1,193 @@
+body{
+  background-color: #00a9e0;
+  font-family: "Lucida Console", "Courier New", "monospace";
+  padding: 10px;
+  font-size: 24px;
+}
+
+.container{
+  border: 2px solid #fc5903;
+  padding: 10px;
+}
+
+.topnav {
+    background-color: #00a9e0;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #fc5903;
+    color: white;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none; 
+   padding-left: 0;
+  }
+
+  .name { 
+    font-weight: bold;
+   
+  }
+  
+  .culture {
+    width: 270px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  
+  .header {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    background: white;
+    border: 2px solid #fc5903;
+  }
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    }
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+    height: 100%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #fc5903;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height:auto;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  /* Footer */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+    border: 2px solid #fc5903;
+  }
+  @media screen and (max-width: 900px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+      
+    }
+
+    .header {
+      padding: 20px;
+      width:100%;
+      font-size: 30px;
+      text-align: center;
+      background: white;
+      border: 2px solid #fc5903;
+    }
+
+    body{
+      background-color: #00a9e0;
+      font-family: "Lucida Console", "Courier New", monospace;
+      padding: 10px;
+      font-size: 24px;
+    }
+    
+  }

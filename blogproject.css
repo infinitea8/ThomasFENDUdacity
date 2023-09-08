@@ -1,0 +1,325 @@
+body{
+    background-color: #00a9e0;
+    font-family: "Lucida Console", "Courier New", "monospace";
+    padding: 10px;
+    font-size: 14px;
+  }
+
+.topnav {
+  background-color:#00a9e0;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#fc5903;
+  color: white;
+}
+#nestedGrid{
+  display: block;
+  grid-template-columns: 50%;
+  margin: 0 auto;
+  text-align: center;
+  grid-gap: 10px; 
+
+}
+#nestedGrid > *{
+  border: 2px solid #fc5903;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto; 
+  text-align: center;
+  
+}
+.photobox{
+width: 100px;
+height: 100px;
+border: 1px #fc5903;
+
+}
+#one{
+  display: grid;
+  background-image: url("Maslows Pyramid.png");
+  background-size: contain;
+
+}
+#two{
+  display: grid;
+  background-image: url("Rollercoaster ride.png");
+  background-size: contain;
+
+}
+#three{
+  display:grid;
+  background-image: url("Mike Tyson knockout.png");
+  background-size: contain;
+
+}
+#four{
+  display: grid;
+  background-image: url("Power of books.png");
+  background-size: contain;
+
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 300px;
+  border: 2px solid #fc5903;
+  grid-template-areas:
+  "hd"
+  "sd"
+  "main"
+  "ft";
+  gap: 15px;
+  padding: 10px;
+  }
+
+.box{
+  display: block;
+  text-align: center;
+  border: 1px solid #fc5903;
+  background: #ffffff;
+  padding: 10px;
+}
+.header{ 
+  grid-area: hd;
+
+}
+.footer{
+  grid-area: ft;
+}
+.sidebar{ 
+  grid-area: sd;
+  text-align: center;
+ 
+}
+.background img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+  margin: 0 auto;
+}
+.imageContainer {
+  border: 1px solid #444;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin : 0 auto;
+  text-align: center;
+  
+}
+
+.content{
+  grid-area: main;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.container{
+  border: 2px solid #fc5903;
+  padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  ul {
+    list-style: none; 
+   padding-left: 0;
+  }
+  .name { 
+    font-weight: bold;
+   
+  }
+  
+  .culture {
+    width: 270px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 14px;
+    text-align: center;
+    background: white;
+    border: 2px solid #fc5903;
+    height: 200px;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+    
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    
+  }
+  
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #fc5903;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height:auto;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    border: 2px solid #fc5903;
+  }
+  
+  /* Responsive layout - when the screen is less than 900px wide, make the two columns stack on top of each other instead of next to each other */
+  
+
+  @media(min-width:900px){
+  .container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 650px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      gap: 15px;
+    border: 2px solid #fc5903;
+  }
+
+  body{
+    background-color: #00a9e0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 10px;
+    font-size: 14px;
+  }
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 10px;
+      height:100%;
+    }
+
+  
+#nestedGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    border: none;
+    
+  }
+#nestedGrid > *{
+    border: 2px solid #fc5903;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+  }
+.photobox{
+width: 100px;
+height: 150px;
+border: 1px #fc5903;
+
+  }
+
+.imageContainer {
+    display: block;
+    border: 1px solid #444;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  
+}
+
+  }
